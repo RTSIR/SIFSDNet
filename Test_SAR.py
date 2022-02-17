@@ -8,6 +8,9 @@ from pathlib import Path
 import tensorflow.keras.backend as K
 import tensorflow as tf
 
+os.environ["CUDA_VISIBLE_DEVICES"]="7"
+tf_device='/gpu:7'
+
 #ParsingArguments
 parser=argparse.ArgumentParser()
 parser.add_argument('--dataPath',dest='dataPath',type=str,default='./Testing_data/SAR',help='testDataPath')
