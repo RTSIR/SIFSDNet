@@ -10,7 +10,7 @@ import tensorflow as tf
 
 #ParsingArguments
 parser=argparse.ArgumentParser()
-parser.add_argument('--dataPath',dest='dataPath',type=str,default='./Testing_data/Synthetic',help='testDataPath')
+parser.add_argument('--dataPath',dest='dataPath',type=str,default='./Testing_data/SAR',help='testDataPath')
 parser.add_argument('--weightsPath',dest='weightsPath',type=str,default='./Pretrained_models/SIFSDNet_SAR.h5',help='pathOfTrainedCNN')
 args=parser.parse_args()
 #createModel, loadWeights
