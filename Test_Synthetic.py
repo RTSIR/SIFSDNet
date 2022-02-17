@@ -13,12 +13,14 @@ import tensorflow.keras.backend as K
 from matplotlib import pyplot as plt
 import scipy.io
 from scipy import ndimage
-#import hdf5storage
 from tifffile import imwrite
 from utils import utils_image as util
 from PIL import Image
 import skimage.feature
 from skimage.util import random_noise
+
+os.environ["CUDA_VISIBLE_DEVICES"]="7"
+tf_device='/gpu:7'
 
 # custom filter
 def my_Sfilter(shape, dtype=None):
